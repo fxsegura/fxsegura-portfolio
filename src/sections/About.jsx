@@ -26,7 +26,11 @@ const About = () => {
                 </div>
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container ">
-                        <img src="/assets/grid2.png" alt="grid-2" className="w-full  sm:w-[276px] h-fit object-contain"/>
+                        <div className="flex flex-row justify-center">
+                            <img src="/assets/reactlogo.png" alt="grid-2" className="w-fit sm:w-[276px] max-w-fit h-auto object-contain"/>
+                            <img src="/assets/vue.png" alt="grid-2" className="w-fit sm:w-[276px] max-w-fit h-auto object-contain" />
+                            <img src="/assets/angular.png" alt="grid-2" className="w-fit sm:w-[276px] max-w-fit h-auto object-contain"/>
+                        </div>
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
                             <p className="grid-subtext">Javascript/Typescript with a focus on React and NextJs ecosystems</p>
