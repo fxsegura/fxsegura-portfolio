@@ -24,45 +24,45 @@ export const navLinks = [
   export const clientReviews = [
     {
       id: 1,
-      name: 'Emily Johnson',
-      position: 'Marketing Director at GreenLeaf',
-      img: 'assets/review1.png',
+      name: 'Jeff Bridwell',
+      position: 'Director of Software Engineering at FundThatFlip DBA Upwrite',
+      img: 'assets/review2.png',
       review:
-        'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+        'Francisco worked for over a year in one of the engineering teams at Fund That Flip. He is a great communicator, highly fluent in English and seriously smart and capable person. He helped the team build a Javascript template that the org could use to implement our use case driven, serverless architecture. So he has real hands on experience that is highly relevant. I highly recommended Francisco for any consulting engagements you have on your radar.',
     },
     {
       id: 2,
-      name: 'Mark Rogers',
-      position: 'Founder of TechGear Shop',
+      name: 'Marco Ramirez',
+      position: 'CEO/Owner at Asisvet',
       img: 'assets/review2.png',
       review:
-        'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+        'Francisco’s expertise in web development is truly impressive. He delivered a clean rework of my business website, walking me through each step of the process, and our sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
     },
     {
       id: 3,
-      name: 'John Dohsas',
-      position: 'Project Manager at UrbanTech ',
+      name: 'Cesar Illescas',
+      position: 'CEO/Owner at FLTransport',
       img: 'assets/review3.png',
       review:
-        'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+        'I can’t say enough good things about Francisco. He was able to take our project requirements and turn them into a seamless, functional website that powers my business. His problem-solving abilities are outstanding.',
     },
     {
       id: 4,
-      name: 'Ether Smith',
-      position: 'CEO of BrightStar Enterprises',
-      img: 'assets/review4.png',
+      name: 'Christian Green',
+      position: 'Engineering Manager at FundThatFlip DBA Upwrite',
+      img: 'assets/review3.png',
       review:
-        'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+        'Francisco was a pleasure to work with. He did a great job working on multiple complex projects and delivering client facing features. His skills in frontend dev are top-notch.',
     },
   ];
   
   export const myProjects = [
     {
-      title: 'Podcastr - AI Podcast Platform',
-      desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+      title: 'Web Portfolio',
+      desc: "A modern developer portfolio site that uses Threejs. You're looking at it right now!",
       subdesc:
-        'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-      href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+        'Still a work in progress but this site is built with React, Tailwind CSS, Three.js, and Vite, as well as react fiber. Great project to practice and learn threejs, explore modern javascript 3d web design and have a place to host all the great projects I will build and deploy going forward. Stay tuned for further enhancements!',
+      href: '##',
       texture: '/textures/project/project1.mp4',
       logo: '/assets/project-logo1.png',
       logoStyle: {
@@ -87,19 +87,46 @@ export const navLinks = [
           name: 'TypeScript',
           path: '/assets/typescript.png',
         },
+      ],
+    },
+    {
+      title: 'Fullstack Library System',
+      desc: 'Library system that consists of both a client side application and an admin app. The first is a web application that allows users to search for books and view book details. The latter is an admin dashboard for managing the available books in the app. Complete end to end app with authentication.',
+      subdesc:
+        'Built as a unique end-to-end app with Next.js, Tailwind CSS, TypeScript, PostgreSQL, Redis and Auth.js.',
+      href: '#',
+      texture: '/textures/project/project1.mp4',
+      logo: '/assets/project-logo1.png',
+      logoStyle: {
+        backgroundColor: '#2A1816',
+        border: '0.2px solid #36201D',
+        boxShadow: '0px 0px 60px 0px #AA3C304D',
+      },
+      spotlight: '/assets/spotlight1.png',
+      tags: [
         {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          id: 1,
+          name: 'React.js',
+          path: '/assets/react.svg',
+        },
+        {
+          id: 2,
+          name: 'TailwindCSS',
+          path: 'assets/tailwindcss.png',
+        },
+        {
+          id: 3,
+          name: 'TypeScript',
+          path: '/assets/typescript.png',
         },
       ],
     },
     {
-      title: 'LiveDoc - Real-Time Google Docs Clone',
-      desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+      title: 'Fullstack Dating App',
+      desc: 'An interesting, scalable project consisting in mimicking existing dating apps.',
       subdesc:
-        'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-      href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+        'Powered by Next.js, Prisma, NextAuth, Pusher and Cloudinary.',
+      href: '#',
       texture: '/textures/project/project2.mp4',
       logo: '/assets/project-logo2.png',
       logoStyle: {
@@ -124,19 +151,14 @@ export const navLinks = [
           name: 'TypeScript',
           path: '/assets/typescript.png',
         },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
       ],
     },
     {
-      title: 'CarePulse - Health Management System',
-      desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+      title: 'Fullstack AI Email SaaS',
+      desc: 'A deepdive on how email clients work, this project is a fullstack email client that uses AI to sort emails and provide a better user experience.',
       subdesc:
-        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-      href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+        'With a focus on efficiency and scalability, this email client is built with Next.js, Prisma, OpenAI, Stripe, Typescript, Tailwind.',
+      href: '#',
       texture: '/textures/project/project3.mp4',
       logo: '/assets/project-logo3.png',
       logoStyle: {
@@ -163,19 +185,14 @@ export const navLinks = [
           name: 'TypeScript',
           path: '/assets/typescript.png',
         },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
       ],
     },
     {
-      title: 'Horizon - Online Banking Platform',
-      desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+      title: 'Calendly Clone',
+      desc: 'This app powered by google calendar offers free online appointment booking and scheduling. It is a clone of the popular Calendly app.',
       subdesc:
-        'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-      href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+        'Built with Next.js 14, Typescript, Drizzle, ShadCN, Tailwind and Neon.',
+      href: '#',
       texture: '/textures/project/project4.mp4',
       logo: '/assets/project-logo4.png',
       logoStyle: {
@@ -200,19 +217,14 @@ export const navLinks = [
           name: 'TypeScript',
           path: '/assets/typescript.png',
         },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
       ],
     },
     {
-      title: 'Imaginify - AI Photo Manipulation App',
-      desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+      title: 'Algo Visualizer',
+      desc: 'This is an OLD sorting algorithm visualizer.',
       subdesc:
-        'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-      href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+        'Part of a bootcamp project from a few years back, it was my entry into web development, so its far from perfect. Currently developing a new version from scratch. It uses Vue.js, and D3js to provide visualizations for common sorting algorithms.',
+      href: '#',
       texture: '/textures/project/project5.mp4',
       logo: '/assets/project-logo5.png',
       logoStyle: {
@@ -237,11 +249,6 @@ export const navLinks = [
           name: 'TypeScript',
           path: '/assets/typescript.png',
         },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
       ],
     },
   ];
@@ -260,29 +267,47 @@ export const navLinks = [
   export const workExperiences = [
     {
       id: 1,
-      name: 'Framer',
-      pos: 'Lead Web Developer',
-      duration: '2022 - Present',
-      title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-      icon: '/assets/framer.svg',
+      name: 'Jalasoft',
+      pos: 'Full Stack Software Engineer',
+      duration: '2021 - Present',
+      title: "Jalasoft is a leading software development company that specializes in engineering staff augmentation. As a Full Stack Software Engineer, I work on a wide range of web application projects, using cutting-edge technologies, for top US companies as part of their engineering team. Experience building client facing and internal solutions in the Edtech, Fintech and IT space.",
+      icon: '/assets/jala.svg',
       animation: 'victory',
     },
     {
       id: 2,
-      name: 'Figma',
-      pos: 'Web Developer',
-      duration: '2020 - 2022',
-      title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-      icon: '/assets/figma.svg',
+      name: 'FXSoft',
+      pos: 'Self Employed Tech Consultant and Web Development Contractor',
+      duration: '2018 - present',
+      title: "Since college I've explored opportunities to put my knowledge to good use and offer my services as a tech consultant and web development contractor. I've worked with clients from various industries, including agroindustry, finance, education and transportation, to deliver high-quality web applications and custom digital solutions that fit individual business needs.",
+      icon: '/assets/FXSoft.svg',
       animation: 'clapping',
     },
     {
       id: 3,
-      name: 'Notion',
-      pos: 'Junior Web Developer',
-      duration: '2019 - 2020',
-      title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-      icon: '/assets/notion.svg',
+      name: 'Massiano Furniture',
+      pos: 'Freelance Executive Assistant | Magento Developer | Designer | Tech Supervisor',
+      duration: '2021 - 2021',
+      title: "At Massiano Furniture, I was partially responsible for managing the company's online store, creating ad campaigns, supervising the team, doing data entry and providing technical support. It was a hybrid role that allowed me to wear many hats and gain valuable experience in e-commerce, web development, and digital marketing.",
+      icon: '/assets/massiano.svg',
+      animation: 'salute',
+    },
+    {
+      id: 4,
+      name: 'Big Data S.A.',
+      pos: 'Software Engineer Intern',
+      duration: '2020 - 2021',
+      title: "My first experience as a software engineer during college. I was assigned to a file management system that was being build to sell to banks and other financial institutions. I was responsible for the front end and back end of the system, and I learned a lot about the software development process, teamwork, and the importance of communication. Worked directly on dashboards and a document labeling feature",
+      icon: '/assets/bigdata.svg',
+      animation: 'salute',
+    },
+    {
+      id: 5,
+      name: 'Universidad de las Fuerzas Armadas ESPE',
+      pos: 'Technology Intern',
+      duration: '2019 - 2019',
+      title: "I did a brief internship in my University, assisting multiple departments with data entry and data migration, as well as occasional tech support. Also worked on a project to easily generate reports for student's academic progress.",
+      icon: '/assets/university.svg',
       animation: 'salute',
     },
   ];
