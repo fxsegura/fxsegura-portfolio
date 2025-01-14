@@ -1,9 +1,12 @@
 import { useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import emailjs from '@emailjs/browser';
+import useAlert from '../hooks/useAlert.js';
+import Alert from '../components/Alert.jsx';
 
 const Contact = () => {
     const formRef = useRef();
+    const { alert, showAlert, hideAlert } = useAlert();
     const isMobile = useMediaQuery({ maxWidth: 768 });
     const [loading, setLoading] = useState(false);
     const [form, setForm] = useState({
@@ -21,8 +24,8 @@ const Contact = () => {
         setLoading(true);
         try{
             await emailjs.send(
-                'service_cjge1sp', 
-                'template_oo5vh5q', 
+                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID, 
                 {
                     from_name: form.name,
                     to_name: 'Francisco',
@@ -30,24 +33,36 @@ const Contact = () => {
                     to_email: 'fxsegura.dev@gmail.com',
                     message: form.message,
                 },
-                'AeK4JadoBPUoi4vHO'
+                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
             )
             setLoading(false);
-            alert("Your message has been sent!");
-            setForm({
-                name: "",
-                email: "",
-                message: "",
-            });
+            showAlert({
+                show: true,
+                text: 'Thank you for your message 😃',
+                type: 'success',
+              });
+            setTimeout(() => {
+                hideAlert(false);
+                setForm({
+                  name: '',
+                  email: '',
+                  message: '',
+                });
+              }, [3000]);
         } catch(error){
             setLoading(false);
-            console.log(error);
-            alert("Something went wrong. Please try again later.");
+            console.error(error);
+            showAlert({
+                show: true,
+                text: 'Something went wrong, please try again later! 😞',
+                type: 'danger',
+            });
         }
     };
 
     return (
         <section id="contact" className="c-space my-20">
+            {alert.show && <Alert {...alert} />}
             <div className="relative min-h-screen flex items-center justify-center flex-col">
                 {!isMobile && 
                 <img src="/assets/terminal.png" alt="terminal background" className="absolute inset-0 min-h-screen"/>}
