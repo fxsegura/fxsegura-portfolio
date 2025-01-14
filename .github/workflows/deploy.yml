@@ -28,10 +28,18 @@ jobs:
         run: npm run build
         
       # Step 4: Push the build to a separate branch (e.g., `deploy`)
-      - name: Push Build
-        run: |
-          git config --local user.name "GitHub Actions"
-          git config --local user.email "actions@github.com"
-          git add dist
-          git commit -m "Deploy production build"
-          git push origin +HEAD:build
+      # - name: Push Build
+      #   run: |
+      #     git config --local user.name "GitHub Actions"
+      #     git config --local user.email "actions@github.com"
+      #     git add dist
+      #     git commit -m "Deploy production build"
+      #     git push origin +HEAD:build
+      - name: Push build
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: build
+          FOLDER: dist
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          MESSAGE: "Build ({sha}) {msg}" # Commit message
